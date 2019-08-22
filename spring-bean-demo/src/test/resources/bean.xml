@@ -9,6 +9,11 @@
 		http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring-1.2.xsd
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd">
 
-	<bean id="test" class="com.zwd.bean.domain.SayService"></bean>
+	<!--<bean id="test" class="com.zwd.bean.domain.SayService"></bean>-->
 
+	<bean id="teacher" class="com.zwd.bean.domain.Teacher">
+	</bean>
+	<!--<bean id="changesmoking" class="com.zwd.bean.domain.ChangeTeacherBeanFactoryPostProcessor"/>-->
+	<!--<bean id="changesmoking" class="com.zwd.bean.domain.ChangeTeacherBeanPostProcessor"/>-->
+	<bean id="springOtherBean" class="com.zwd.bean.domain.SpringOtherBean"/>
 </beans>
