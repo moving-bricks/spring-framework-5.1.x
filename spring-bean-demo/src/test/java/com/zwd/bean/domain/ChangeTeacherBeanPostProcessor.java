@@ -8,7 +8,7 @@ public class ChangeTeacherBeanPostProcessor implements BeanPostProcessor {
 	@Override
 	public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
 		if (bean instanceof Teacher){
-			Teacher teacher = (Teacher)bean;
+			Teacher teacher = (Teacher)bean;;
 		}
 		return bean;
 

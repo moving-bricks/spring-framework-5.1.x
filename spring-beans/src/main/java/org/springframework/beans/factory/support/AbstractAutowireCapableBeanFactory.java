@@ -1798,6 +1798,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 				}
 			}
 			if (bean instanceof BeanFactoryAware) {
+				//aop AnnotationAwareAspectJAutoProxyCreator
 				((BeanFactoryAware) bean).setBeanFactory(AbstractAutowireCapableBeanFactory.this);
 			}
 		}

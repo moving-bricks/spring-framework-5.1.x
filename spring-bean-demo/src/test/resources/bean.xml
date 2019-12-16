@@ -12,6 +12,10 @@
 	<!--<bean id="test" class="com.zwd.bean.domain.SayService"></bean>-->
 
 	<bean id="teacher" class="com.zwd.bean.domain.Teacher">
+		<property name="student" ref="student"></property>
+	</bean>
+	<bean id="student" class="com.zwd.bean.domain.Student">
+		<property name="teacher" ref="teacher"></property>
 	</bean>
 	<!--<bean id="changesmoking" class="com.zwd.bean.domain.ChangeTeacherBeanFactoryPostProcessor"/>-->
 	<!--<bean id="changesmoking" class="com.zwd.bean.domain.ChangeTeacherBeanPostProcessor"/>-->
